@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* **************************************************************************************************************************************** */
+/* 공통 */
+/* **************************************************************************************************************************************** */
+/* 여백초기화 */
+body,
+div,
+ul,
+li,
+dl,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: "맑은 고딕";
+    font-size: 12px;
+    background-color: white;
+}
+
+/* clearfix */
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* /clearfix */
+
+/* ul li 리스트 */
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* /ul li 리스트 */
+
+/* 레이아웃 */
+#wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#wrap #header {
+    padding: 10px 0 0px 0;
+    /* border-bottom: 1px solid #dddddd; */
+    text-align: center;
+}
+
+#wrap #nav {
+    padding: 0px 0 15px 0;
+    text-align: center;
+    /* background-color: lightgray; */
+}
+
+/* nav */
+#nav ul {
+    display: inline-block;
+    margin: 14px 10px 0 0;
+}
+
+#nav ul>li {
+    width: 80px;
+    height: 25px;
+    float: left;
+    margin: 0px 0px 0 10px;
+    padding-top: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: white;
+}
+
+#nav ul>li:hover {
+    background-color: #dddddd;
+}
+
+#wrap #footer {
+    padding: 10px 10px 10px 10px;
+    /* border-bottom: 1px solid #dddddd; */
+    text-align: center;
+    background-color: lightgray;
+}
+
+/* /레이아웃 */
+
+/* footer */
+#wrap #footer>a {
+    display: inline-block;
+    padding: 10px 10px;
+    color: black;
+    font-size: 15px;
+}

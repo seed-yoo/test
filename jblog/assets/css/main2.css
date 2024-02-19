@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* **************************************************************************************************************************************** */
+/* 공통 */
+/* **************************************************************************************************************************************** */
+/* 여백초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+
+body {
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after{
+    display: block;
+    content: "";
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+/* /clearfix */
+
+/* ul li 리스트 */
+ul, ol {list-style-type: none;}
+/* /ul li 리스트 */
+
+/* 레이아웃 */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap #header {
+    padding: 10px 0 10px 0;
+    background-color: #26aa46;
+    height: 130px;
+}
+
+/* header */
+#header h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-top: 30px;
+}
+#header ul {
+    float: right;
+    margin: 25px 10px 0 0;
+}
+#header ul>li {
+    float: left;
+    margin: 0px 0px 0 10px;
+    padding: 2px 10px 2px 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: lightgray;
+}
+
+#header ul>li:hover{
+    background-color: #dddddd;
+}
+
+#wrap #footer {
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    /* border-bottom: 1px solid #dddddd; */
+    text-align: center;
+    background-color: lightgray;
+}
+/* /레이아웃 */
+
+/* footer */
+#wrap #footer>p{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+#aside {
+    width: 190px;
+}
+
+#aside img {
+    width: 170px;
+    height: 100px;
+}
+
+#aside #imgtitle {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2px;
+}
+#aside p {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* /공통 */
+/* **************************************************************************************************************************************** */

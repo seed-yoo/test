@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+body {
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after{
+    display: block;
+    content: "";
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+
+ol {
+    margin-bottom: 10px;
+}
+ol, ul{
+    list-style: none;
+}
+
+ol>li {
+    margin: 0px;
+    float: left;
+}
+
+/* 위치 */
+li:not(:last-child):after {
+    content: ">";
+}
+
+/* 전체 폼 */
+.content {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 700px;
+    /* padding: 10px; */
+}
+
+/* 타이틀 */
+.content h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 폼그룹 */
+.content .form-group {
+    margin-bottom: 10px;
+}
+
+/* 폼타이틀 */
+.content .form-group .form-text {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+/* 선택박스 */
+.content .form-group #sel-board {
+    width: 200px;
+}
+
+/* 제목 */
+.content .form-group #txt-title {
+    width: 600px;
+}
+/* 패스워드 */
+.content .form-group #txt-pw {
+    width: 196px;
+}
+
+/* 내용 */
+.content .form-group #txt-content {
+    width: 686px;
+    height: 80px;
+    resize: none;
+}
+
+/* 공개범위 form - radio_btn */
+.content .form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* 공개범위 form - radio_btn */
+.content .form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* 버튼 영역 */
+.content .btn-area {
+    text-align: center;
+    border-top: 1px solid black ;
+    padding: 10px 0px 10px 0px;
+}
+
+.content .btn-area .btn {
+    width: 60px;
+    height: 30px;
+}
+
+

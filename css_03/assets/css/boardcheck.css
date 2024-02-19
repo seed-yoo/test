@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* contents3 */
+#contents3 {
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#contents3 #aside h2 {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background-color: #dddddd;
+}
+#contents3 #aside ul {
+    width: 160px;
+}
+
+#contents3 #aside ul>li {
+    padding: 8px 0 8px 10px;
+    border: 1px solid #a6a6a6;
+    margin: 5px 0 0 0;
+}
+
+#contents3 #aside {
+    width: 180px;
+    float: left;
+}
+/* /contents3 */
+
+#contents3 #main {
+    width: 820px;
+    float: left;
+}
+
+#main ol>li {
+    margin: 0px;
+    float: left;
+}
+
+/* 위치 */
+#contents3 #main li:not(:last-child):after {
+    content: ">";
+}
+#contents3 #main #page li:not(:last-child):after {
+    content: "";
+}
+#main #laps {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+#main h3 {
+    float: left;
+}
+#main ol {
+    float: right;
+}
+
+#listupdatebtn {
+    float: right;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #dddddd;
+    margin-left: 10px;
+}
+
+#intro {
+    padding: 0px 0 10px 0;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+#intro span{
+    width: 50px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#intro p{
+    font-size: 15px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contenttxt {
+    border-bottom: 1px solid lightgray;
+    padding: 0px 0 10px 0;
+    margin-bottom: 10px;
+}
+

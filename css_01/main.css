@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* 주석 */
+
+h2 {
+    color: aquamarine;
+}
+
+li {
+    color: cornflowerblue;
+}
+
+h3 {
+    color: lightblue;
+}
+
+h1 {
+    color: lightcoral;
+}
+
+p {
+    color: yellowgreen;
+    font-size: 20px;
+}

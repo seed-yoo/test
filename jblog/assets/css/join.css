@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* contents */
+#contents {
+    margin: 10px 10px 40px 10px;
+    text-align: center;
+}
+
+#inputtxt {
+    display: inline-block;
+    width: 440px;
+    height: 330px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+#contents #idinput, #pwinput, #nameinput {
+    width: 160px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#contents #pwtxt label, #idtxt label, #nametxt label {
+    display: inline-block;
+    width: 80px;
+    font-size: 15px;
+    text-align: left;
+}
+/* #contents #pwtxt label {
+    font-size: 15px;
+    text-align: left;
+} */
+#contents #idtxt {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#contents #idtxt #checkmsg {
+    margin-top: 5px;
+    margin-left: 85px;
+    margin-bottom: 10px;
+}
+#contents #pwtxt, #nametxt {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+#contents #agreetxt {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    text-align: left;
+}
+#contents #agreetxt label {
+    font-size: 15px;
+}
+#contents #agreetxt span {
+    display: inline-block;
+    width: 80px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#contents p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#contents hr {
+    width: 400px;
+}
+
+#contents button {
+    width: 380px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+#contents #idtxt #idcheckbtn {
+    margin: 0px 0px 0 0px;
+    padding: 7px 15px 7px 15px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: white;
+}
+
+#contents #idtxt #idcheckbtn:hover{
+    background-color: #dddddd;
+}

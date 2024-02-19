@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* contents2 */
+#contents2 {
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#contents2 #aside h2 {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background-color: #dddddd;
+}
+#contents2 #aside ul {
+    width: 160px;
+}
+
+#contents2 #aside ul>li {
+    padding: 8px 0 8px 10px;
+    border: 1px solid #a6a6a6;
+    margin: 5px 0 0 0;
+}
+
+#contents2 #aside {
+    width: 180px;
+    float: left;
+}
+/* /contents2 */
+
+#contents2 #main {
+    width: 820px;
+    float: left;
+}
+
+#main ol>li {
+    margin: 0px;
+    float: left;
+}
+
+/* 위치 */
+#contents2 #main li:not(:last-child):after {
+    content: ">";
+}
+#contents2 #main #page li:not(:last-child):after {
+    content: "";
+}
+#main #laps {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+#main h3 {
+    float: left;
+}
+#main ol {
+    float: right;
+}
+
+#main #itroupdate {
+    width: 820px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+#main #itroupdate td {
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 3px;
+}
+
+#main #itroupdate input {
+    width: 320px;
+    float: right;
+    margin: 5px;
+}
+#main #itroupdate textarea {
+    width: 810px;
+    height: 150px;
+    margin: 5px;
+    resize: none;
+}
+
+#main #intropw {
+    text-align: left;
+    margin-right: 10px;
+}
+#updatebtn {
+    margin: 5px;
+}
+
+#updatebtn button{
+    padding: 5px 30px 5px 30px;
+}
+
+#main #reply {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#main #reply td {
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 10px;
+}
+
+#main #reply {
+    width: 820px;
+}
+
+#main #reply td {
+    width: 330px;
+}
+
+
+#main #reply .no {
+    width: 80px;
+}
+
+#introname, #intropw {
+    width: 70px;
+}

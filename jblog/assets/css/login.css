@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* contents */
+#contents {
+    margin: 10px 10px 40px 10px;
+    text-align: center;
+}
+
+#inputtxt {
+    display: inline-block;
+    width: 340px;
+    height: 270px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+#contents input {
+    width: 160px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+#contents label {
+    display: inline-block;
+    width: 120px;
+    font-size: 15px;
+    text-align: left;
+}
+/* #contents #pwtxt label {
+    font-size: 15px;
+    text-align: left;
+} */
+#contents #idtxt {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#contents p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#contents hr {
+    width: 300px;
+}
+
+#contents button {
+    width: 280px;
+    height: 40px;
+    margin-top: 5px;
+}

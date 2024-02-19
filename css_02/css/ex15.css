@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+ol>li {
+    list-style-type: none;
+    margin: 0px;
+    float: left;
+}
+
+li:not(:last-child):after {
+    padding: 10px;
+    content: ">";
+}
+
+
+
+
+

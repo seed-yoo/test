@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* contents */
+#contents {
+    text-align: center;
+}
+
+
+#searchbtn {
+    display: inline-block;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+table input {
+    width: 410px;
+    height: 40px;
+    border: 2px solid blue;
+}
+table button {
+    width: 55px;
+    height: 44px;
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+
+#blogtitle {
+    margin-right: 30px;
+}
+#radiobtn {
+    height: 500px;
+}

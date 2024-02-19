@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* contents3 */
+#contents3 {
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#contents3 #aside h2 {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background-color: #dddddd;
+}
+#contents3 #aside ul {
+    width: 160px;
+}
+
+#contents3 #aside ul>li {
+    padding: 8px 0 8px 10px;
+    border: 1px solid #a6a6a6;
+    margin: 5px 0 0 0;
+}
+
+#contents3 #aside {
+    width: 180px;
+    float: left;
+}
+/* /contents3 */
+
+#contents3 #main {
+    width: 820px;
+    float: left;
+}
+
+#main ol>li {
+    margin: 0px;
+    float: left;
+}
+
+/* 위치 */
+#contents3 #main li:not(:last-child):after {
+    content: ">";
+}
+#contents3 #main #page li:not(:last-child):after {
+    content: "";
+}
+#main #laps {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+#main h3 {
+    float: left;
+}
+#main ol {
+    float: right;
+}
+
+#control {
+    margin-top: 100px;
+}
+
+.check {
+    height: 30px;
+    padding: 0px 0px 0px 100px;
+    margin-bottom: 20px;
+}
+
+
+
+.check a {
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #dddddd;
+    margin-left: 10px;
+}
+
+#info {
+    width: 500px;
+    height: 290px;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#idtxt {
+    height: 25px;
+}
+#pwtxt {
+    height: 25px;
+}
+#nametxt {
+    height: 25px;
+}
+
+.infospan {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+#totalbtn {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+#use {
+    display: inline-block;
+}
+#man, #woman {
+    margin-right: 10px;
+}
+
+#totalbtn button {
+    width: 95px;
+    height: 30px;
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+
+
+
+* {
+    font-family: 맑은고딕;
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h1.title {
+    font-family: 궁서체;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+
+.ita{font-style: italic;}
+
+.b-bold{ font-weight: bold; }
+
+.c01 { color: #0000FF;}
+.c02 { color: #FF0000;}
+.c03 { color: #00FF00;}
+
+h3.subtitl01 {
+    text-decoration: underline;
+    color: #00FF00;
+}
+h3.subtitle02 {
+    text-decoration: underline;
+}
+
+p{text-indent: 30px;}
+
+.history {
+    background-color: #D9D9D9;
+}
+
+ul>li{
+    list-style-type: square;
+}
+ol>li{
+    list-style-type: none;
+}
+
+tbody>tr:hover{ background-color: #EDD3ED; }
+
+thead {
+    background-color: #C8EBFA;
+}
+
+
+
+/* 방문전 링크일때 색 선없음*/
+a:link {color: #000000; text-decoration: none;}
+/* 방문했던 링크일때 색 위에선*/
+a:visited {color: #000000;}
+/* 마우스오버일때 색 아래선 */
+a:hover {color: #0000FF; text-decoration: underline;}
+/* 클릭했을때 빨간색 중앙선*/
+a:active {color: #0000FF; text-decoration: underline;}
+
+
+.ta {
+    text-align: right;
+}
+
+
+tr>td.ta::before{
+    content: "약 ";
+}
+tr>td.ta::after{
+    content: "(MB/초)";
+}

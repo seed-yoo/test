@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/join.css">
+</head>
+
+<body>
+    <!-- content -->
+    <div class="content">
+
+        <!-- form-group -->
+
+        <h3>회원가입</h3>
+
+        <ol class="clearfix">
+            <li>홈</li>
+            <li>유저</li>
+            <li>회원가입</li>
+        </ol>
+        <div class="form-group clearfix">
+
+            <!-- 아이디 -->
+            <div class="form-group">
+                <label for="form-id" class="form-title">아이디</label>
+                <input type="text" id="form-id" placeholder="아이디를 입력하세요">
+            </div>
+            <!-- /아이디 -->
+
+            <!-- 비밀번호 -->
+            <div class="form-group">
+                <label for="form-pw" class="form-title">패스워드</label>
+                <input type="password" id="form-pw" placeholder="패스워드를 입력하세요">
+            </div>
+            <!-- /비밀번호 -->
+
+            <!-- 이름 -->
+            <div class="form-group">
+                <label for="form-name" class="form-title">이름</label>
+                <input type="text" id="form-name" placeholder="이름을 입력하세요">
+            </div>
+            <!-- /이름 -->
+
+            <!-- 프로필사진 -->
+            <div class="form-group">
+                <label for="form-picture" class="form-title">프로필사진</label>
+                <input type="file" id="form-picture">
+            </div>
+            <!-- /프로필사진 -->
+
+            <!-- 주소 -->
+            <div class="form-group">
+                <div class="addvalue">
+                    <label for="form-add" class="form-title">주소</label>
+                </div>
+                <div>
+                    <input type="text" value="주소벨류" id="form-add">
+                    <button>우편번호찾기</button>
+                    <br>
+                    <input type="text" value="주소벨류" class="add2">
+                </div>
+            </div>
+            <!-- /주소 -->
+            <!-- 이동통신사 -->
+            <div class="form-group">
+                <label for="telecom" class="form-title">이동통신사</label>
+                <select id="telecom">
+                    <option value="">선택해주세요</option>
+                    <option value="SKT">SKT</option>
+                    <option value="KT">KT</option>
+                    <option value="LG">LGU+</option>
+                </select>
+            </div>
+            <!-- /이동통신사 -->
+
+            <!-- 나이 -->
+            <div class="form-group">
+                <span class="form-title">나이</span>
+                <label for="age10">10대</label>
+                <input type="radio" id="age10" name="age" checked="checked">
+                <label for="age20">20대</label>
+                <input type="radio" id="age20" name="age">
+                <label for="age30">30대</label>
+                <input type="radio" id="age30" name="age">
+                <label for="age40">40대</label>
+                <input type="radio" id="age40" name="age">
+                <label for="ageetc">기타</label>
+                <input type="radio" id="ageetc" name="age">
+            </div>
+            <!-- /나이 -->
+
+            <!-- 혈액형 -->
+            <div class="form-group">
+                <span class="form-title">혈액형</span>
+                <label for="blooda">A형</label>
+                <input type="radio" id="blooda" name="blood" checked="checked">
+                <label for="bloodb">B형</label>
+                <input type="radio" id="bloodb" name="blood">
+                <label for="bloodo">O형</label>
+                <input type="radio" id="bloodo" name="blood">
+                <label for="bloodab">AB형</label>
+                <input type="radio" id="bloodab" name="blood">
+            </div>
+            <!-- /혈액형 -->
+
+            <!-- 취미 -->
+            <div class="form-group">
+                <span class="form-title">취미</span>
+                <label for="hobby-read">독서</label>
+                <input type="checkbox" id="hobby-read" name="hobby" checked="checked">
+                <label for="hobby-music">음악</label>
+                <input type="checkbox" id="hobby-music" name="hobby">
+                <label for="hobby-travel">여행</label>
+                <input type="checkbox" id="hobby-travel" name="hobby">
+                <label for="hobby-movie">영화</label>
+                <input type="checkbox" id="hobby-movie" name="hobby">
+                <label for="hobby-coding">코딩</label>
+                <input type="checkbox" id="hobby-coding" name="hobby">
+                <label for="hobby-etc">기타</label>
+                <input type="checkbox" id="hobby-etc" name="hobby">
+            </div>
+            <!-- /취미 -->
+
+            <!-- 자기소개 -->
+            <div class="form-group">
+                <div class="form-introdiv">
+                    <label for="form-intro" class="form-title" id="intro">자기소개</label>
+                </div>
+                <div>
+                    <textarea id="form-intro"></textarea>
+                </div>
+            </div>
+            <!-- /자기소개 -->
+
+            <!-- btn-area -->
+            <div class="btn-area">
+                <button class="btn">등록</button>
+                <button class="btn">초기화</button>
+            </div>
+            <!-- /btn-area -->
+
+
+
+
+        </div>
+        <!-- /form-group -->
+
+    </div>
+    <!-- /content -->
+</body>
+
+</html>

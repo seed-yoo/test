@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* contents2 */
+#contents2 {
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#contents2 #aside h2 {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background-color: #dddddd;
+}
+#contents2 #aside ul {
+    width: 160px;
+}
+
+#contents2 #aside ul>li {
+    padding: 8px 0 8px 10px;
+    border: 1px solid #a6a6a6;
+    margin: 5px 0 0 0;
+}
+
+#contents2 #aside {
+    width: 180px;
+    float: left;
+}
+/* /contents2 */
+
+#contents2 #main {
+    width: 820px;
+    float: left;
+}
+
+#main ol>li {
+    margin: 0px;
+    float: left;
+}
+
+/* 위치 */
+#contents2 #main li:not(:last-child):after {
+    content: ">";
+}
+#contents2 #main #page li:not(:last-child):after {
+    content: "";
+}
+#main #laps {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+#main h3 {
+    float: left;
+}
+#main ol {
+    float: right;
+}
+#main #search {
+    width: 820px;
+    margin-bottom: 10px;
+}
+
+#main #search div{
+    float: right;
+}
+
+form button {
+    width: 50px;
+    height: 25px;
+}
+#searchtxt {
+    width: 150px;
+    height: 20px;
+    padding-top: 2px;
+}
+
+
+#writebtn {
+    float: right;
+    padding: 5px 7px 5px 7px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #dddddd;
+}
+
+
+table {
+    width: 820px;
+    border-collapse: collapse;
+    text-align: center;
+}
+table th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+table tr {
+    height: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+table thead {
+    background-color: lightgray;
+}
+
+.ta {
+    text-align: left;
+}
+
+#main form #page {
+    text-align: center;
+    padding-right: 330px;
+}
+
+#main form #page ol>li {
+    margin: 5px;
+}

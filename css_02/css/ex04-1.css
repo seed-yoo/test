@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    width: 900px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead>tr>th {
+    background-color: lightgray;
+}
+thead {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+tbody:last-child {
+    border-bottom: 2px solid gray;
+}
+tbody>tr{
+    border-bottom: 1px dotted gray;
+}
+table>tbody>tr:hover {
+    background-color: #ffff00;
+}
+
+.txt-color {
+    color: blue;
+    /* font-weight: 500; */
+    text-decoration: underline;
+}
+
