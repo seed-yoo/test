@@ -13,7 +13,9 @@
     float: right;
 }
 
-
+#contents2 #menu ol>li {
+    float: left;
+}
 
 
 
