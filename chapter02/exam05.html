@@ -13,7 +13,7 @@
 		<ul>
 			<li id="board"><span>게</span>시판</li>
 			<li id="gallery" class="active"><span>갤</span>러리</li>
-			<li id="board"><span>방</span>명록</li>
+			<li id="guest"><span>방</span>명록</li>
 		</ul>
 	</div>
 
@@ -30,7 +30,7 @@
 		<button type="submit">전송</button>
 	</form>
 
-	<a href="https://www.naver.com" target="_blank">네이버</a>
+	<a class="box red" href="https://www.naver.com" target="_blank">네이버</a>
 
 
 	<p id="p01">자바<strong>스크립트</strong></p>
@@ -38,6 +38,86 @@
 </body>
 
 <script>
+	// DOM tree가 생성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		let tag01 = document.querySelector("#nav");
+		console.log(tag01);
+		console.log(tag01.tagName);	// 태그네임 => 대문자
+		
+		let tag02 = document.querySelector("[target='_blank']");
+		console.log(tag02);
+		console.log(tag02.tagName);	// 태그네임 => 대문자
+		tag02.style.color = "#ff0000";
+		
+		// 아이디	요소.id
+		let tag03 = document.querySelector("div");
+		console.log(tag03);
+		console.log(tag03.id);
+		
+		let tags04 = document.querySelectorAll("ul>li");
+		console.log(tags04);
+		/*
+		console.log(tags04[0].id);
+		console.log(tags04[1].id);
+		console.log(tags04[2].id);
+		*/
+		for(let i = 0; i<tags04.length; i++){
+			console.log(tags04[i].id);
+		};
+
+		// 클래스
+		let tags05 = document.querySelectorAll("form>label");
+		console.log(tags05);
+		console.log(tags05[0].className);
+		console.log(tags05[1].className);
+		console.log(tags05[2].className);
+		
+		let tag06 = document.querySelector("a");
+		console.log(tag06);
+		console.log(tag06.className);
+		
+		// 기타속성
+		let tag07 = document.querySelector("#txt-userId");
+		console.log(tag07);
+		console.log(tag07.id);
+		console.log(tag07.tagName);
+		console.log(tag07.className);
+
+		console.log(tag07.type);
+		console.log(tag07.name);
+		console.log(tag07.value);
+		console.log(tag07.placeholder);
+
+		console.log("===========================================");
+
+		// 기타속성
+		let tag08 = document.querySelector("a");
+		console.log(tag08);
+		console.log(tag08.id);
+		console.log(tag08.tagName);
+		console.log(tag08.className);
+		console.log(tag08.href);
+		console.log(tag08.target);
+		console.log(tag08.innerHTML);
+		console.log(tag08.textContent);
+
+		let tag09 = document.querySelector("h1");
+		console.log(tag09);
+		console.log(tag09.innerHTML);
+		console.log(tag09.textContent);
+		
+		let tags10 = document.querySelectorAll("li");
+		console.log(tags10);
+		console.log(tags10[0].innerHTML);
+		console.log(tags10[0].textContent);
+
+
+
+
+		
+		
+	});
 
 
 

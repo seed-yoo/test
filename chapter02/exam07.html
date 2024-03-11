@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link href="" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
 
 </head>
 
@@ -16,7 +17,7 @@
 			<li id="guestbook">방명록</li>
 		</ul>
 	</div>
-	
+
 	<div id="content">
 		<p class="red">내용1입니다.</p>
 
@@ -53,6 +54,57 @@
 </body>
 
 <script>
+	// DOM tree가 완성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		let tag01 = document.querySelector("h1");
+		console.log(tag01);
+		console.log(tag01.parentElement);
+		
+		console.log("===========================================");
+		
+		let tag02 = document.querySelector(".red");
+		console.log(tag02);
+		console.log(tag02.parentElement);
+		
+		console.log("===========================================");
+		
+		let tag03 = document.querySelector("#n-3");
+		console.log(tag03);
+		console.log(tag03.parentElement);
+		
+		console.log("===========================================");
+		
+		// 이효리
+		let tag04 = document.querySelector("#h-2");
+		console.log(tag04);
+		
+		// #h-2 위치일때 본인의 tr의 id값 출력
+		console.log(tag04.parentElement.id);
+		
+		// #h-2 위치일때 이효리 이름 출력
+		console.log(tag04.previousElementSibling.textContent);
+		
+		// #h-2 위치일때 이효리 회사번호
+		console.log(tag04.nextElementSibling.textContent);
+		
+		console.log("===========================================");
+
+		// #h-2 위치일때 박명수
+		console.log(tag04.parentElement.nextElementSibling.firstElementChild.textContent);
+		// #h-2 위치일때 박명수 회사번호
+		console.log(tag04.parentElement.nextElementSibling.lastElementChild.textContent);
+
+		// #h-2 위치일때 정우성
+		console.log(tag04.parentElement.previousElementSibling.firstElementChild.textContent);
+		// #h-2 위치일때 정우성 회사번호
+		console.log(tag04.parentElement.previousElementSibling.lastElementChild.textContent);
+
+
+
+
+	});
+
 </script>
 
 </html>
