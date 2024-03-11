@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+    <h1>자바스클립트</h1>
+    <h2>소제목</h2>
+</body>
+<script type="text/javascript">
+    // personList 만들기
+    // personList = [ {}, {}, {}, {} ]
+
+    // 배열만들기
+    let personList = [];
+
+    //vo1 만들기
+    let personVo1 = {
+        no: 1,
+        name: "박명수",
+        hp: "010-1111-1111",
+        company: "02-2222-2222"
+    };
+    console.log(personVo1);
+    
+    //vo2 만들기
+    let personVo2 = {
+        no: 2,
+        name: "유재석",
+        hp: "010-4134-2321",
+        company: "02-1111-1111"
+    };
+    console.log(personVo2);
+
+    //vo3 만들기
+    let personVo3 = {
+        no: 3,
+        name: "서장훈",
+        hp: "010-6666-3333",
+        company: "02-4444-6433"
+    };
+    console.log(personVo3);
+
+    // 배열에 vo1추가
+    // 배열에 vo2추가
+    // 배열에 vo3추가
+    personList.push(personVo1);
+    console.log(personList);
+    personList.push(personVo2);
+    console.log(personList);
+    personList.push(personVo3);
+    console.log(personList);
+
+    // 유재석 name 출력
+    console.log(personList[1].name);
+
+    // 박명수 company출력
+    console.log(personList[0].company);
+
+
+
+
+
+
+
+</script>
+
+</html>

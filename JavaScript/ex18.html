@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+    <h1>자바스클립트</h1>
+    <h2>소제목</h2>
+</body>
+<script type="text/javascript">
+    // 코어객체
+    let date = new Date();
+    console.log(date);
+
+    let year = date.getFullYear();
+    let month = date.getMonth()+1;
+    let day = date.getDate();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let seconds = date.getSeconds();
+    console.log(year);
+    console.log(month);
+    console.log(day);
+    console.log(hour);
+    console.log(minute);
+    console.log(seconds);
+
+    let date2 = new Date(5);
+    console.log(date2);
+
+    console.log("=========================================");
+    // 문자열
+    let str = "Hello";
+    console.log(str.length);
+    console.log("000122-323456".charAt(7));
+    
+    console.log("=========================================");
+    // 숫자
+    // 숫자1 (문자열-->숫자1)
+    let num01 = "100.34";
+    //let no = Number(num01);   // 문자열-->숫자
+    let no = parseInt(num01);   // 문자열-->정수
+    
+    // 숫자2
+    let num02 = 5;
+    
+    let sum = no + num02;
+    console.log(sum);
+    
+    console.log("=========================================");
+    // 수학
+    let pi = Math.PI;
+    console.log(pi);    //3.141592653589793
+
+    console.log(Math.abs(-123));    // 절대값
+    console.log(Math.ceil(123.456));    // 올림
+    console.log(Math.floor(123.456));    // 내림
+    console.log(Math.round(123.456));    // 반올림
+
+    console.log(Math.random());    // 반올림 0 <= 숫자 < 1
+
+
+
+
+</script>
+
+</html>

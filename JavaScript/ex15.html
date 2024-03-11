@@ -29,8 +29,8 @@
     console.log(guestBookVo.content);
     console.log(guestBookVo);
 
-    guestBookVo.name = "이은빈";
-    guestBookVo.password = "2000";
+    guestBookVo.name = "유영ㅅ";
+    guestBookVo.password = "1993";
     console.log(guestBookVo);
 
     guestBookVo.showInfo();
@@ -39,16 +39,16 @@
     window.console.log("================================");
 
     //객체 정의 - 생성 이후에 초기화(값을 나중에 넣어야 할 때)
-    let guestbookVo = {};
-    guestbookVo.name = "김수빈";
-    guestBookVo.pw = "1998";
-    guestbookVo.content = "김수빈 방문";
-    guestBookVo.showInfo = function(){
-        console.log(this.name + ", " + this.password + ", " + this.content)
+    let guestVo = {};
+    guestVo.name = "유영수";
+    guestVo.pw = "1993";
+    guestVo.content = "유영수 입니다";
+    guestVo.showInfo = function(){
+        console.log("# " + this.name + ", " + this.pw + ", " + this.content)
     };
-
-    console.log(guestbookVo);
-    guestBookVo.showInfo();
+    guestVo.age = 32;
+    console.log(guestVo);
+    guestVo.showInfo();
 
 </script>
 
