@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+    <h1>자바스클립트</h1>
+    <h2>소제목</h2>
+</body>
+<script type="text/javascript">
+    /*
+    let str = "global";
+    
+    // 정의
+    function checkScope(){
+        let str = "local";
+        console.log(str);
+    }
+
+    // 실행
+    checkScope();       // checkScope 부르고,     ()실행
+                        // local
+
+    console.log(str);   // global   ==> 정의에 let를 삭제하고 실행하면 local로 콘솔에 뜬다
+    */
+
+    //////////////////////////////////////////////////////////////
+
+    let str = "global";
+    // let str2;
+    function checkScope() {
+        str = "local";          // global   ==> local
+        console.log(str);       // local
+
+        str2 = "로컬";          // str2 변수없음    오류
+
+    }
+
+    checkScope();
+    console.log(str);   // local
+
+    console.log(str2);   // local
+
+
+
+
+
+
+
+
+
+    
+
+</script>
+
+</html>

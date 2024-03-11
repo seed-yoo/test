@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+    <h1>자바스클립트</h1>
+    <h2>소제목</h2>
+</body>
+
+<script>
+    console.log("========================================");
+    console.log("#변수선언");
+
+    var no = 3;
+    var str = "안녕하세요";
+    var boolean = 3 > 5;
+    var year, month, day;
+    year = "2024년";
+    month = "03월";
+    day = "08일";
+
+    console.log(no);
+    console.log(str);
+    console.log(boolean);
+    console.log(year + month + day);
+
+    let no2 = 2;
+    let str2 = "안녕하시렵니까";
+    let boolean2 = 3 < 5;
+    let year2, month2, day2;
+    year2 = "2025년";
+    month2 = "01월";
+    day2 = "01일";
+    console.log(no2);
+    console.log(str2);
+    console.log(boolean2);
+    console.log(year2 + month2 + day2);
+
+    console.log("========================================");
+    console.log("#let --> 같은 이름의 변수선언 불가");
+    let person = "정우성";
+    // let person2 = "유영수";
+    console.log(person);
+
+    console.log("#var --> 같은 이름의 변수선언 가능");
+    var guest = "정우성";
+    var guest = "유재석";
+    console.log(guest);
+
+
+    console.log("========================================");
+    console.log("#const 상수");
+    const MAX = 10; // 상수는 보통 대문자로 표시한다.
+    // MAX = 20;
+    console.log(MAX);
+
+    /*  // 선언과 동시에 초기화(공간에 값을 대입)
+    const MIN;
+    MIN=0;
+    */
+
+    console.log("========================================");
+    console.log("#값 대입시 자료형이 결정된다");
+    let date;
+    console.log(typeof data);   // data -- > undefined
+
+    data = 15;
+    console.log(typeof data); // data -- > number
+
+    data = "안녕";
+    console.log(typeof data); // data -- > string
+
+    data = true
+    console.log(typeof data); // data -- > boolean
+
+    data = 5 > 3;
+    console.log(typeof data); // data -- > boolean
+
+    console.log("========================================");
+    console.log("#undefined null 의 비교");
+    let myVar1;
+    console.log(myVar1);    // undefined
+
+    let myVar2 = null;
+    console.log(myVar2);    // null
+
+    console.log("========================================");
+    console.log("#  ==, === 의 비교");
+    console.log(123 == 123); //true
+    console.log("123" == 123); //true 모양만 맞으면 된다
+    console.log("123" === 123); //false 자료형까지 맞아야한다
+
+    console.log("========================================");
+    let var01;
+    let var02 = null;
+
+    console.log(var01); // undefined
+    console.log(var02); // null
+    
+    console.log(var01 == var02);    // undefined == null --> true
+    console.log(var01 === var02);   // undefined === nul --> false
+
+    console.log("======");
+    console.log("" == false); //true
+    console.log("" == 0); //true
+    console.log(0 == false); //true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

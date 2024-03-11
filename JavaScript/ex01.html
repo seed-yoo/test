@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+    <h1>자바스클립트</h1>
+    <h2>소제목</h2>
+</body>
+
+<script>
+    window.console.log("aaaaa");    // window 생략가능
+    console.log("========================================");
+    console.log("#데이터타입 확인");
+    // 자바스크립트 기본자료형은 number string boolean
+    console.log(typeof 1); //number
+    console.log(typeof 1.5); //number
+    console.log(typeof '한'); //string
+    console.log(typeof "한"); //string
+    console.log(typeof "안녕하세요"); //string
+    console.log(typeof (6 > 5)); //boolean
+    console.log(typeof (6 < 5)); //boolean
+
+    console.log("========================================");
+    console.log("#number형");
+    console.log(13 + 5); // 18
+    console.log(13 - 5); // 8
+    console.log(13 * 5); // 65
+    console.log(13 / 5); // 몫 2.6
+    console.log(13 % 5); // 나머지 3
+
+    console.log(13 + 5.2); // 18.2
+    console.log(5 + 3 * 2); // 11
+    console.log((5 + 3) * 2); // 16
+
+    console.log("========================================");
+    console.log("#string형");
+    console.log("동해물과 백두산이");
+    console.log('동해물과 백두산이');
+
+    console.log("동해물과 '백두산'이");
+    console.log('동해물과 "백두산"이');
+
+    console.log("동해물과 \"백두산\"이");
+    console.log("동해물과 \'백두산\'이");
+
+    console.log("동해물과 \n백두산이");
+    console.log("동해물과 \t백두산이");
+    console.log("동해물과 \\백두산이");
+
+    console.log("동해물과" + "1234" + "백두산이");
+
+    console.log("========================================");
+    console.log("#boolean형");
+    console.log( 52 > 273 ); //false
+    console.log( 52 < 273 ); //true
+    
+    // >= 좌변이 우변보다 크거나 같습니다.
+    // <= 우변이 좌변보다 크거나 같습니다.
+    // > 좌변이 큽니다.
+    // < 우변이 큽니다.
+    // == 좌변과 우변이 같습니다.
+    // != 좌변과 우변이 다릅니다.
+    // ===
+    // !==
+    console.log("========================================");
+    console.log("# &&   ||  연산자");
+    console.log( (5>3) && (5<3) );  // T && F   ==> F
+    console.log( (5>3) || (5<3) );  // T || F   ==> T
+    console.log( !((5>3) || (5<3)) );  // !(T || F)   ==> F
+
+
+
+
+
+
+
+</script>
+
+</html>

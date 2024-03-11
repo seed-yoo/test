@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+    <h1>자바스클립트</h1>
+    <h2>소제목</h2>
+</body>
+
+<script type="text/javascript">
+
+    // 기명함수
+    testA();    // testA 그냥이름, ()실행
+
+    // 함수정의는 위에 있는 효과가 생긴다(함수는 리허설때 미리 조사해둔다)
+    function testA() {
+        console.log("testA 기명함수입니다.");
+    }
+
+    /////////////////////////////////////////////////////////
+    let a = 3;
+    // 익명함수
+    // 변수에 함수를 대입       익명함수의 정의
+    let testB = function () {
+        console.log("이름이 없는 익명함수입니다.");
+    }
+
+    testB();    // 변수를 실행      변수안에 함수가 있어서 실행가능
+
+</script>
+
+</html>
