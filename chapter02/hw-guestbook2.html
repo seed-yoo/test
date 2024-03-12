@@ -31,7 +31,31 @@
 </body>
 
 <script>
+// DOM tree가 완성되었을때
+document.addEventListener("DOMContentLoaded", function () {
 
+	let btnWrite = document.querySelector("#btnWrite");
+	console.log(btnWrite);
+	
+	btnWrite.addEventListener("click", function () {
+		
+		let name = document.querySelector("input[type='text']");
+		let pw = document.querySelector("input[type='password']");
+		let content = document.querySelector("textarea");
+
+		
+		let guestbookVo = {
+			name: name.value,
+			password: pw.value,
+			content: content.value
+		};
+
+		console.log(guestbookVo);
+	});
+
+
+
+});
 
 
 
