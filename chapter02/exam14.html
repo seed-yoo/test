@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
+
+	<style>
+		div{
+			width: 400px;
+			border: 1px solid red;
+		}
+
+		p{
+			border: 1px solid black;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div>
+		<p id="p1">마바사아자차카타파하</p>
+	</div>
+
+
+</body>
+
+<script>
+	// DOM tree가 완성되었을때
+    document.addEventListener("DOMContentLoaded", function () {
+
+		let pTag = document.querySelector("#p1");
+		console.log(pTag);
+
+		// 컨텐츠 맨앞에 추가
+		pTag.insertAdjacentHTML("afterbegin", "<strong>가나다라</strong>");
+		
+		// 컨텐츠 맨뒤에 추가
+		pTag.insertAdjacentHTML("beforeend", "<strong>abcdefg</strong>");
+ 
+		// 시작전
+		pTag.insertAdjacentHTML("beforebegin", "시작전");
+
+		// 시작후
+		pTag.insertAdjacentHTML("afterend", "끝난후");
+
+    });
+
+
+</script>
+
+</html>

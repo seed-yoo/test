@@ -53,6 +53,42 @@
 </body>
 
 <script>
+	// DOM tree가 완성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		let trs = document.querySelectorAll("tbody>tr");
+		console.log(trs);	// trs3개
+
+		let personList= [];
+
+		for(let i=0; i<trs.length; i++){
+			let name = trs[i].children[0].textContent;
+			let hp = trs[i].children[1].textContent;
+			let company = trs[i].children[2].textContent;
+
+			let personVo = {
+				name : name,
+				hp: hp,
+				company: company	
+			};
+
+			personList.push(personVo);
+		}
+		
+		console.log(personList);
+		console.log(personList[1].hp);
+
+
+		
+		console.log("===========================================");
+		
+
+
+
+	});
+
+
+
 </script>
 
 </html>

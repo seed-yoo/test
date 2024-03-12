@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
 
-<style>
+    <style>
 
-</style>
+    </style>
 
 
 </head>
 
 <body>
     <div>
-        <input id="left" type="text" value=""> 
-        + 
-        <input id="right" type="text" value=""> 
+        <input id="left" type="text" value="">
+        +
+        <input id="right" type="text" value="">
         <br>
-        <button id="btnPlus" type="button" >더하기</button>
+        <button id="btnPlus" type="button">더하기</button>
         <p id="display">0</p>
     </div>
 </body>
 
 <script>
+    // DOM tree가 완성되었을때
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log(" DOM tree 생성");
 
+        // 더하기버튼을 클릭했을때
+        let btnPlus = document.querySelector("#btnPlus");
+        console.log(btnPlus);
+        
+        btnPlus.addEventListener("click", function () {
+            console.log("버튼클릭");
+
+            // 태그를 가져온다
+            let left = document.querySelector("#left")
+            let right = document.querySelector("#right");
+            let display = document.querySelector("#display");
+            
+            // string => number 변환
+            let leftVal = Number(left.value);
+            let rightVal = Number(right.value);
+            
+            // 합계구하기
+            let sum = leftVal + rightVal;
+            
+            display.textContent = sum;
+
+            // 확인용
+            console.log(typeof left.value);
+            console.log(typeof right.value);
+            console.log(display);
+            console.log(typeof leftVal);
+            console.log(typeof rightVal);
+            console.log(sum);
+
+            // 비우기
+            left.value = "";
+            right.value = "";
+
+
+        });
+
+
+
+
+
+
+    });
 </script>
 
 </html>

@@ -47,8 +47,10 @@
 	<p id="p2"> 학교종이 땡땡땡 abcdefg </p>
 	
 
+	<!-- 
 	<p id="p3"> abcdefghijklmn </p>
-	<p id="p4"> 학교종이 땡땡땡<br> abcdefg </p>
+	<p id="p4"> 학교종이 땡땡땡<br> abcdefg </p> 
+	-->
 
 
 
@@ -61,10 +63,44 @@
 	<p id="p14">문장2</p>
 
 
+	<p id="p3"> abcdefghijklmn </p>
 
 </body>
 
 <script>
+	// DOM tree가 완성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		// #p11태그를 컨텐츠를 가져오세요
+ 		let p11Tag = document.querySelector("#p11");
+		console.log(p11Tag.textContent);
+		console.log(p11Tag.innerHTML);
+		
+		// #p13태그에 텍스트를 "<strong>가나다라마바사아자차카타파하</strong>"
+		// textContent
+		let p13Tag = document.querySelector("#p13");
+		p13Tag.textContent = "<strong>가나다라마바사아자차카타파하</strong>";
+
+		// #p14태그에 텍스트를 "<strong>가나다라마바사아자차카타파하</strong>"
+		// innerHTML
+		let p14Tag = document.querySelector("#p14");
+		p14Tag.innerHTML = "<strong>가나다라마바사아자차카타파하</strong>";
+		
+		
+		// #p3태그의 텍스트를 비움
+		let p3Tag = document.querySelector("#p3");
+		p3Tag.textContent = "";
+
+
+
+
+
+
+
+
+		console.log("===========================================");
+		
+	});
 </script>
 
 </html>

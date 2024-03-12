@@ -23,7 +23,28 @@
 </body>
 
 <script>
+    // DOM tree가 완성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+		console.log(" DOM tree 생성");
 
+		// #p11태그를 컨텐츠를 가져오세요
+ 		let btn = document.querySelector("#btn");
+		btn.addEventListener("click", function(){
+            console.log("버튼클릭");
+            
+            let display = document.querySelector("#display");
+            console.log(display);
+            display.textContent = "홍길동";
+            display.style.color = "#0000ff";
+            
+        });
+
+
+
+
+
+		
+	});
 
 </script>
 
