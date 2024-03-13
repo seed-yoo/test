@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
+	<style>
+		ul{
+			width: 200px;
+			padding: 20px;
+			background-color: #00ffff;
+		}
+
+		li{
+			border: 1px solid black;
+		}
+
+	</style>
+
+
+	
+</head>
+
+<body>
+
+	<ul>
+		<li>첫번째 아이템 입니다.</li>
+		<li>두번째 아이템 입니다.</li>
+		<li>세번째 아이템 입니다.</li>
+		<li>네번째 아이템 입니다.</li>
+		<li>다섯번째 아이템 입니다.</li>
+	</ul>
+
+	<button id="btnAfter" type="button">뒤에추가</button>
+</body>
+
+<script>
+	// DOM tree가 완성되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		let btnAfter = document.querySelector("#btnAfter");
+
+		// 뒤에추가 버튼을 클릭했을때
+		btnAfter.addEventListener("click", function(){
+			
+			let ulTag = document.querySelector("ul");
+			
+			let str = "<li>뒤에 추가된 아이템 입니다.</li>";
+			ulTag.insertAdjacentHTML("beforeend", str);
+		});
+
+		// ul요소를 클릭했을때의 기능을 li요소에 위임
+		let ulTag = document.querySelector("ul");
+		ulTag.addEventListener("click", function(event){
+			// this => 이벤트 리스너가 붙어 있는 그 요소
+			// event.target => 사용자가 실제로 클릭한 그 요소
+			console.log(this);	// ul
+			console.log(event.target);	// li
+			console.log(event.target.tagName);	// li의 태그네임 => 대문자표기됨
+
+			// 실제클릭한 곳이 (target)이 "li"요소이면 아래 코드 실행
+			if(event.target.tagName == "LI"){
+				//event.target.textContent = "";
+				event.target.remove();
+			}
+
+
+
+
+
+		});
+
+
+
+
+
+
+
+		/*
+		// li요소를 클릭했을때	=> 새로추가된 li요소에는 적용되지 않는다
+		let liTags = document.querySelectorAll("li");
+		console.log(liTags);
+		for(let i = 0; i<liTags.length; i++){
+			liTags[i].addEventListener("click", function(){
+				console.log("클릭");
+			});
+		}
+		
+		*/
+		
+		
+
+
+	});
+
+
+</script>
+
+</html>
