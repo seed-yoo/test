@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <p>js 추가문법</p>
+
+</body>
+
+<script>
+/*
+// 기명함수
+function plus(a, b){
+    sum = a+b;
+    return sum;
+};
+
+let result = plus(5,10);
+console.log(result);
+*/
+/*
+// 익명함수
+let plus = function(a, b){
+    let sum = a + b;
+    return sum;
+};
+*/
+// 익명함수 화살표 함수
+let plus = (a, b) => {
+    let sum = a+b;
+    return sum;
+}
+
+let result = plus(14, 20);
+console.log(result);
+
+console.log("------------------------------------------------");
+
+// 기본익명함수
+let circleArea = function(r){
+    let area = r*r*3.14;
+    return area;
+};
+
+console.log(circleArea(5));
+
+// 화살표함수 1 화살표 사용
+let circleArea2 = (r)=>{
+    let area = r*r*3.14;
+    return area;
+};
+console.log(circleArea2(10));
+
+// 화살표함수 2 인자(파라미터)가 1개이면 괄호 생략가능, 2개는 안됨
+let circleArea3 = r=>{
+    let area = r*r*3.14;
+    return area;
+};
+console.log(circleArea3(10));
+
+// 화살표함수 3 함수 몸체가 1줄이고, 결과를 반환하는 경우 중괄호와 return 생략가능
+let circleArea4 = r =>{ return r*r*3.14};
+console.log(circleArea4(10));
+
+// 화살표함수 4 함수 몸체가 1줄이고, 결과를 반환하는 경우 중괄호와 return 생략가능
+let circleArea5 = r => r*r*3.14;
+console.log(circleArea5(10));
+
+let sayHello = function(){
+    console.log("안녕");
+}
+sayHello();
+
+let sayHello2 = () => console.log("안녕2");
+sayHello2();
+
+
+
+
+</script>
+
+</html>
